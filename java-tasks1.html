@@ -27,5 +27,48 @@
             console.log(0);
         }
     </script>
+
+    <script>
+        let age;
+
+        if (age >= 14 && age <=90) {
+            console.log("right age group");
+        } else {
+            console.log("wrong age group");
+        }
+    </script>
+
+    <script>
+        let login = prompt("Who's there?", "");
+
+        if (login === "Admin") {
+            let pass = prompt('Enter your password', '');
+
+            if (pass ==="TheMaster") {
+                console.log("Welcome!");
+            } else if (pass === "" || pass === null) {
+                console.log("Canceled");
+            } else {
+                console.log("Wrong password");
+            }
+        } else if (login === '' || login === null) {
+            console.log('Canceled');
+        } else {
+            console.log("I don't know you");
+        }
+
+    </script>
+
+    <script>
+        let browser = prompt("which browser do you prefer?")
+
+        if (browser ===  'Edge') {
+            console.log("You've got the Edge!");
+        } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+            console.log('Okay we support these browsers too');
+        } else {
+            console.log('We hope that this page looks ok!')
+        }
+    </script>
 </body>
 </html>
