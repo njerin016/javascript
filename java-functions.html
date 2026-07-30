@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function checkAge(age) {
+            return (age > 18) ? true : confirm("Did parents allow you?");
+        }
+
+        function checkAge(age) {
+            return (age > 18) || confirm("Did parents allow you?");
+        }
+
+        function min(a, b) {
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+
+        function add7(a) {
+            return a + 7;
+        }
+        console.log(add7(10));
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function capitalize(a) {
+            return (a[0].toUpperCase() + a.substring(1).toLowerCase())
+        }
+         
+        function lastLetter(a) {
+            return (a.slice(-1));
+        }
+    </script>
+
+</body>
+</html>
