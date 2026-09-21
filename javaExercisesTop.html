@@ -68,6 +68,34 @@
 
             return arrCopy;
             }
+        
+        function shuffle(array) {
+            let shuffledArray = [];
+
+            while (array.length > 0) {
+                let randomIndex = Math.floor(Math.random() * array.length);
+
+                let randomItem = array.splice(randomIndex, 1);
+
+                shuffledArray.push(randomItem[0]);
+            }
+
+            for (let i = 0; i < shuffledArray.length; i++) {
+                array.push(shuffledArray[i]);
+            }
+        }
+
+        function unique(arr) {
+            let uniqueItems = [];
+
+            for (let i = 0; i < arr.length; i++) {
+                if (!uniqueItems.includes(arr[i])) {
+                    uniqueItems.push(arr[i]);
+                }
+            }
+
+            return uniqueItems;
+        }
     </script>
 </body>
 </html>
